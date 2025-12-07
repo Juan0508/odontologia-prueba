@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Recepción</title>
+    <link rel="stylesheet" href="../public/css/admin.css">
+</head>
+<body>
+    <button class="logout-btn" id="logout">Cerrar sesion</button>
+ <h1>Panel de Recepción</h1>
+  <table id="tabla-solicitudes">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Cédula</th>
+        <th>Email</th>
+        <th>Teléfono</th>
+        <th>Servicio</th>
+        <th>Fecha visita</th>
+        <th>Hora</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Se llena dinámicamente -->
+    </tbody>
+  </table>
+
+  <!-- 🌟 Modal para editar -->
+  <div class="modal" id="modal-editar">
+    <div class="modal-content">
+      <h2>Editar Solicitud</h2>
+      <input type="date" id="editar-fecha">
+      <input type="time" id="editar-hora">
+      <div>
+        <button id="guardar-cambios" class="btn-edit">Guardar</button>
+        <button id="cancelar" class="btn-delete">Cancelar</button>
+      </div>
+    </div>
+  </div>
+    <script src="../public/js/admin.js"></script>
+</body>
+</html>

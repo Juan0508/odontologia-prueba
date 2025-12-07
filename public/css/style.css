@@ -1,0 +1,382 @@
+/* ======== ESTILOS GLOBALES ======== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* ======== Index ======== */
+header {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+nav {
+    margin-top: 0.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e9c46a;
+}
+
+#contenedor {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+#inicio h2{
+    color: #2a9d8f;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#inicio p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+#img-doctores {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 1.5rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #2a9d8f;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  #inicio h2 {
+    font-size: 1.5rem;
+  }
+
+  #inicio p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  #contenedor {
+    padding: 0.5rem;
+  }
+}
+
+/* ======== SECCIÓN CONÓCENOS ======== */
+
+#contenedor-conocenos {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+#conocenos {
+  background-color: #f7f7f7;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#conocenos h2 {
+    color: #2a9d8f;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#conocenos p {
+  text-align: justify;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+#img-equipo{
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  height: auto;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+/* Efecto al pasar el mouse por la imagen */
+#img-equipo:hover {
+  transform: scale(1.05);
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 768px) {
+  #conocenos h2 {
+    font-size: 1.7rem;
+  }
+
+  #conocenos p {
+    font-size: 1rem;
+  }
+
+  #img-equipo {
+    width: 100%;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  #conocenos {
+    padding: 1rem;
+  }
+}
+
+/* ======== SECCIÓN CONTÁCTANOS ======== */
+#contenedor-contactanos {
+max-width: 900px;
+margin: 3rem auto;
+padding: 1rem;
+}
+
+#contactanos {
+  background-color: #fefefe;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#contactanos h2{
+  text-align: center;
+  color: #2a9d8f;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#contactanos p {
+  text-align: justify;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+#contactanos ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+#contactanos li {
+font-size: 1.1rem;
+margin: 0.8rem 0;
+color: #264653;
+}
+
+#contactanos li::before {
+  content: "📞 ";
+  color: #2a9d8f;
+  font-size: 1.2rem;
+}
+
+#contactanos li:nth-child(2)::before {
+  content: "✉️ ";
+}
+
+/* ======== BOTÓN DE CONTACTO (opcional) ======== */
+#contactanos a.boton {
+  display: inline-block;
+  background-color: #2a9d8f;
+  color: white;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#contactanos a.boton:hover {
+  background-color: #21867a;
+  transform: scale(1.05);
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 768px) {
+  #contactanos {
+    padding: 1.5rem;
+  }
+
+  #contactanos h2 {
+    font-size: 1.7rem;
+  }
+
+  #contactanos li {
+    font-size: 1rem;
+  }
+}
+
+/* ======== SECCIÓN SOLICITAR VISITA ======== */
+
+#conntenedor-solicitar-visita {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 1rem;
+}
+
+#solicitar-visita{
+  background-color: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+#solicitar-visita h2 {
+    text-align: center;
+    color: #2a9d8f;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#solcitar-visita p {
+    text-align: justify;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+
+/* ======== FORMULARIO ======== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #264653;
+}
+
+.form-group input,
+.form-group select {
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #2a9d8f;
+  box-shadow: 0 0 4px rgba(42, 157, 143, 0.3);
+}
+
+/* ======== BOTÓN ENVIAR ======== */
+
+.btn-enviar{
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #21867a;
+  transform: scale(1.05);
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 768px) {
+  #solicitar-visita {
+    padding: 1.5rem;
+  }
+
+  #solicitar-visita h2 {
+    font-size: 1.7rem;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #contenedor-solicitar-visita {
+    padding: 0.5rem;
+  }
+
+  #solicitar-visita p {
+    text-align: left;
+  }
+}

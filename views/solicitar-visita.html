@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Visita</title>
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Clínica Sonrisa Perfecta</h1>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="conocenos.html">Conocenos</a>
+            <a href="contactanos.html">Contáctanos</a>
+            <a href="solicitar-visita.html">Solicitar Visita</a>
+        </nav>
+    </header>
+
+    <main id="contenedor-solicitar-visita">
+        <section id="solicitar-visita">
+            <h2>Solicitar una Visita</h2>
+            <p>Para solicitar una visita en la Clínica Sonrisa Perfecta, por favor completa el siguiente formulario con tus datos y la fecha deseada. Nos pondremos en contacto contigo para confirmar tu cita.</p>
+
+        <form id="solicitar-visita-form">
+        <div class="form-group">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan Pérez">
+        </div>
+
+        <div class="form-group">
+    <label for="cedula">Cédula:</label>
+    <input type="text" id="cedula" name="cedula" required 
+           placeholder="Ej: 001-1234567-8" 
+           maxlength="13"
+           title="Formato: 001-1234567-8">
+</div>
+
+        <div class="form-group">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required placeholder="Ej: juan@email.com">
+        </div>
+
+        <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required placeholder="Ej: 809-123-4567"
+  oninput="this.value = this.value.replace(/[^0-9\-]/g, '');" title="Solo se permiten numeros y guiones (-)">
+        </div>
+
+        <div class="form-group">
+            <label for="servicio">Servicio:</label>
+            <select id="servicio" name="servicio" required>
+                <option value="">Selecciona un servicio</option>
+                <option value="Limpieza Dental">Limpieza Dental</option>
+                <option value="Extracción">Extracción</option>
+                <option value="Ortodoncia">Ortodoncia</option>
+                <option value="Blanqueamiento">Blanqueamiento</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="fecha_visita">Fecha:</label>
+            <input type="date" id="fecha_visita" name="fecha_visita" required>
+        </div>
+
+        <div class="form-group">
+            <label for="hora_visita">Hora:</label>
+            <input type="time" id="hora_visita" name="hora_visita" required>
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar solicitud</button> 
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Clínica Sonrisa Perfecta. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../public/js/visitas.js"></script>
+</body>
+</html>
